@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="서랍장 바깥 쪽입니다."
+    />
+    <SlidingDrawer
+        android:handle="@id/btn_handle"
+        android:content="@id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="손잡이"/>
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#D57EEC"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="여기는 서랍 안 쪽입니다."
+                />
+        </LinearLayout>
+    </SlidingDrawer>
+</LinearLayout>
